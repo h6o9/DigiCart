@@ -1,0 +1,391 @@
+.main-logo {
+  font-size: 35px;
+  color: rebeccapurple;
+  font-weight: 700;
+  font-style: italic;
+  margin-right: 249px;
+  text-decoration: none;
+}
+
+.navigation a {
+  font-size: 20px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-style: italic;
+}
+
+.nav-btn button {
+  font-size: 20px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-style: italic;
+  background-color: rebeccapurple;
+  color: #fff;
+}
+
+.navbar1 ul {
+  list-style: none;
+}
+
+.navbar1 ul li a {
+  font-size: 20px;
+  color: rebeccapurple;
+}
+
+.banner-content {
+  margin-bottom: 400px;
+}
+
+.banner-slider img {
+  height: 900px; /* Set the desired height */
+  object-fit: cover; /* Ensures the aspect ratio is maintained */
+  width: 100%; /* Ensures the images fill their containers */
+}
+
+.banner-content h1 {
+  font-size: 45px;
+  font-style: italic;
+  margin-bottom: 30px;
+}
+
+.banner-content p {
+  font-size: 30px;
+  font-style: italic;
+}
+
+.banner-content a {
+  text-decoration: none;
+  font-size: 20px;
+  color: #fff;
+  font-style: italic;
+}
+
+/* Add transition to the carousel items */
+.carousel-item {
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+/* Add hover effect for product cards */
+.product-card {
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Add animation to the carousel captions */
+.carousel-caption {
+  opacity: 0;
+  animation: fadeIn 2s forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Add smooth transition effect to the 'Add to Cart' and 'More Details' buttons */
+.btn {
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+.btn-success:hover {
+  background-color: #28a745;
+}
+
+.btn-primary:hover {
+  background-color: #007bff;
+}
+
+/* Add fade-in animation to product images */
+.product-card img {
+  opacity: 0;
+  animation: fadeInImage 1s forwards;
+}
+
+@keyframes fadeInImage {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Container for the shop */
+.shop-container {
+  padding: 20px;
+  transition: all 0.3s ease;
+}
+
+/* Category buttons with hover effect */
+.category-buttons button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.category-buttons button:hover {
+  background-color: #0056b3;
+  transform: translateY(-5px);
+}
+
+/* Product card hover effect */
+.product-card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Product image transition effect */
+.product-card img {
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover img {
+  transform: scale(1.1);
+}
+
+/* Button animation */
+.btn {
+  transition: transform 0.3s ease;
+}
+
+.btn:hover {
+  transform: translateY(-5px);
+}
+
+/* Featured products section transition */
+.featured-products {
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.category-buttons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.category-buttons button {
+  margin: 0 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+.featured-products {
+  margin-top: 20px;
+}
+
+.product-card {
+  text-align: center;
+}
+
+.product-card img {
+  max-height: 200px;
+  object-fit: contain;
+}
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.btn {
+  width: 45%;
+}
+
+.explore-categories .card-body {
+  background-color: #f8f9fa;
+  text-align: center;
+}
+
+.featured-products .card-body {
+  background-color: #f1f1f1;
+}
+
+.payment-button {
+  padding: 10px 15px;
+  margin-right: 10px;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  font-size: 14px;
+  cursor: pointer;
+  min-width: 80px;
+}
+
+.payment-button.amex {
+  background-color: #007dc3; /* AMEX blue */
+}
+
+.payment-button.apple-pay {
+  background-color: #333333; /* Apple Pay black */
+}
+
+.payment-button.mastercard {
+  background: linear-gradient(
+    90deg,
+    #ff5f00,
+    #ffcb00
+  ); /* Mastercard gradient */
+}
+
+.payment-button.shop {
+  background-color: #5a2ff3; /* Shop purple */
+}
+
+.payment-button.visa {
+  background-color: #1a1f71; /* Visa blue */
+}
+
+.payment-button:hover {
+  opacity: 0.8;
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+}
+
+.footer-logo {
+  font-size: 22px;
+  color: rebeccapurple;
+}
+
+/* Footer section styling */
+footer {
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+/* Footer content hover effect */
+footer:hover {
+  transform: translateY(-5px); /* Footer content ko thoda sa upar move karein */
+  background-color: #212529; /* Darker background on hover */
+}
+
+/* Navigation Links Transition */
+footer .navbar1 a {
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+footer .navbar1 a:hover {
+  color: #f8f9fa; /* Light color on hover */
+  transform: scale(1.1); /* Slightly enlarge text on hover */
+}
+
+/* Social Media Icons Transition */
+footer .d-flex a i {
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+footer .d-flex a:hover i {
+  transform: scale(1.2); /* Slightly enlarge icon */
+}
+
+/* WhatsApp icon hover animation */
+footer .fab.fa-whatsapp:hover {
+  color: #25d366; /* Green color on hover */
+  transform: rotate(360deg); /* Rotate the icon */
+}
+
+/* Facebook icon hover animation */
+footer .fab.fa-facebook:hover {
+  color: #1877f2; /* Facebook blue */
+  transform: scale(1.2);
+}
+
+/* Instagram icon hover animation */
+footer .fab.fa-instagram:hover {
+  color: #c13584; /* Instagram color */
+  transform: scale(1.2);
+}
+
+/* TikTok icon hover animation */
+footer .fab.fa-tiktok:hover {
+  color: #000000; /* Black color */
+  transform: scale(1.2);
+}
+
+/* Footer bottom styling */
+footer .text-center {
+  transition: color 0.3s ease;
+}
+
+footer .text-center:hover {
+  color: #f8f9fa; /* Change color on hover */
+}
+
+/* Footer logo hover effect */
+footer .footer-logo:hover {
+  color: #f8f9fa;
+  text-decoration: underline;
+}
+
+/* Animation for Footer Section */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Apply fade-in-up animation to the footer content */
+footer .container {
+  animation: fadeInUp 1s ease-out;
+}
