@@ -214,11 +214,6 @@
   text-align: center;
 }
 
-.product-card img {
-  max-height: 200px;
-  object-fit: contain;
-}
-
 .card {
   border: 1px solid #ddd;
   border-radius: 8px;
